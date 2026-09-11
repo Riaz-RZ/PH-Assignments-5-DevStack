@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Technologies from "./components/technologies/Technologies";
 import type { Itechnology } from "./types/TechnologyType";
+import { ToastContainer } from "react-toastify";
+
 
  
 const technologiesPromise = async(): Promise<Itechnology[]> =>{
@@ -19,8 +21,12 @@ function App() {
       <Suspense fallback={<h2>Data is Loading...</h2>}>
         <Technologies technologiesPromise = {technologiesPromise()}/>
       </Suspense>
-      
       <Footer/>
+      <ToastContainer
+                position="bottom-right"
+                autoClose={2000}
+                theme="light"
+            />
     </>
   )
 }
