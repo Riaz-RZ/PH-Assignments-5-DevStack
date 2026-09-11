@@ -1,10 +1,12 @@
 import type { Itechnology } from "../../types/TechnologyType"
 
 export interface TechnologyProps {
-    technology: Itechnology
+    technology: Itechnology;
+    onAdd: (technology: Itechnology) => void;
+    isAdded: boolean;
 }
 
-export default function Technology({ technology }: TechnologyProps) {
+export default function Technology({ technology, onAdd, isAdded }: TechnologyProps) {
     console.log(technology);
 
     return (
@@ -56,7 +58,16 @@ export default function Technology({ technology }: TechnologyProps) {
                         {technology.difficulty}
                     </span>
                 </div>
-                <button className="rounded-xl bg-black text-white py-2 cursor-pointer mt-2">Add To Stack</button>
+                <button
+                    onClick={() => onAdd(technology)}
+                    disabled={isAdded}
+                    className={`mt-2 w-full rounded-xl py-2 font-medium transition ${isAdded
+                            ? "cursor-not-allowed bg-green-100 text-green-700"
+                            : "cursor-pointer bg-black text-white hover:bg-slate-800"
+                        }`}
+                >
+                    {isAdded ? "✓ Added to Stack" : "Add To Stack"}
+                </button>
 
             </div>
         </>
