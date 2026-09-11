@@ -56,6 +56,7 @@ export default function Technology({ technology }: TechnologyProps) {
                         {technology.difficulty}
                     </span>
                 </div>
+                <button className="rounded-xl bg-black text-white py-2 cursor-pointer mt-2">Add To Stack</button>
 
             </div>
         </>
