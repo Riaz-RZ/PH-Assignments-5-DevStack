@@ -8,7 +8,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "bg-blue-100 text-blue-600"
   },
   {
     "id": "nextjs",
@@ -18,7 +19,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Full Stack"
+    "badge": "Full Stack",
+    "badgeColor": "bg-green-100 text-green-600"
   },
   {
     "id": "express",
@@ -28,7 +30,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "bg-yellow-100 text-emerald-900"
   },
   {
     "id": "nodejs",
@@ -38,7 +41,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "bg-purple-100 text-purple-600"
   },
   {
     "id": "mongodb",
@@ -48,7 +52,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "NoSQL"
+    "badge": "NoSQL",
+    "badgeColor": "bg-orange-100 text-orange-600"
   },
   {
     "id": "postgresql",
@@ -58,7 +63,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Top SQL"
+    "badge": "Top SQL",
+    "badgeColor": "bg-slate-100 text-slate-600"
   },
   {
     "id": "javascript",
@@ -68,7 +74,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "bg-blue-100 text-blue-600"
   },
   {
     "id": "typescript",
@@ -78,7 +85,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Type Safe"
+    "badge": "Type Safe",
+    "badgeColor": "bg-green-100 text-green-600"
   },
   {
     "id": "python",
@@ -88,7 +96,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Versatile"
+    "badge": "Versatile",
+    "badgeColor": "bg-emerald-100 text-emerald-600"
   },
   {
     "id": "tailwindcss",
@@ -98,7 +107,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
+    "badge": "Fast",
+    "badgeColor": "bg-purple-100 text-purple-600"
   },
   {
     "id": "sass",
@@ -108,7 +118,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Sass.svg",
     "rating": 4.6,
     "difficulty": "Intermediate",
-    "badge": "CSS Power"
+    "badge": "CSS Power",
+    "badgeColor": "bg-orange-100 text-orange-600"
   },
   {
     "id": "docker",
@@ -118,7 +129,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Containers"
+    "badge": "Containers",
+    "badgeColor": "bg-slate-100 text-slate-600"
   },
   {
     "id": "github-actions",
@@ -128,7 +140,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/GitHub-Actions.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Automation"
+    "badge": "Automation",
+    "badgeColor": "bg-blue-100 text-blue-600"
   },
   {
     "id": "git",
@@ -138,7 +151,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "bg-green-100 text-green-600"
   },
   {
     "id": "postman",
@@ -148,6 +162,7 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Postman.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
-    "badge": "API Testing"
+    "badge": "API Testing",
+    "badgeColor": "bg-orange-100 text-orange-600"
   }
 ]

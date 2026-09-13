@@ -23,7 +23,9 @@ export default function Technology({ technology, onAdd, isAdded }: TechnologyPro
                         />
                     </div>
 
-                    <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600">
+                    <span
+                        className={`rounded-full px-3 py-1 text-xs font-semibold ${technology.badgeColor}`}
+                    >
                         {technology.badge}
                     </span>
                 </div>
@@ -62,8 +64,8 @@ export default function Technology({ technology, onAdd, isAdded }: TechnologyPro
                     onClick={() => onAdd(technology)}
                     disabled={isAdded}
                     className={`mt-2 w-full rounded-xl py-2 font-medium transition ${isAdded
-                            ? "cursor-not-allowed bg-green-100 text-green-700"
-                            : "cursor-pointer bg-black text-white hover:bg-slate-800"
+                        ? "cursor-not-allowed bg-green-100 text-green-700"
+                        : "cursor-pointer bg-black text-white hover:bg-slate-800"
                         }`}
                 >
                     {isAdded ? "✓ Added to Stack" : "Add To Stack"}
