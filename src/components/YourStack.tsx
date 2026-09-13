@@ -18,15 +18,14 @@ export default function YourStack({
                 <h2 className="text-xl font-bold text-slate-800">
                     Your Stack
                 </h2>
-
-                <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
-                    {stack.length} Technology Selected
-                </span>
             </div>
+            <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
+                {stack.length} Technology Selected
+            </span>
 
             {stack.length === 0 ? (
-                <p className="py-12 text-center text-sm text-slate-400">
-                    No technologies selected yet.
+                <p className="py-6 text-center text-sm text-slate-400 border border-slate-200 mt-4 rounded-2xl">
+                    Your Stack is empty.
                 </p>
             ) : (
                 <div className="mt-5 flex flex-col gap-3">
