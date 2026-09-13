@@ -1,35 +1,77 @@
-# React + TypeScript + Vite
+# 🚀 Dev Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Dev Stack is a web application that helps developers explore popular technologies and organize their development preferences. Users can view technology information, compare different options, and add their favorite technologies to a personalized stack.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* React
+* TypeScript
+* Tailwind CSS
+* React Toastify (NPM Package)
+* JSON  (for technology data)
+* Vite (build tool)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. **Explore Technologies**
+   Browse different technologies with their names, categories, descriptions, ratings, difficulty levels, and badges.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+2. **Build Your Own Stack**
+   Add technologies to your personal stack and view the selected technologies in the sidebar.
 
-## Expanding the Oxlint configuration
+3. **Manage Selected Technologies**
+   Remove individual technologies, remove all selected technologies, and prevent duplicate selections with notification messages.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🌐 Live Demo
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+[Visit Dev Stack](https://ph-devstack.netlify.app/)
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+# 📚 React Questions and Answers
+
+## 1. What is JSX, and why is it used in React?
+
+JSX is a syntax that allows us to write HTML-like code inside JavaScript. React uses JSX to describe what the user interface should look like.
+
+## 2. What is the difference between props and state?
+
+Props: Read-only data passed down from a parent component to a child component. The receiving child component cannot modify them.
+State: Local, mutable data managed internally within a component. Changing state triggers a re-render of the component to update the UI.
+
+## 3. What does the `useState` hook do, and where did you use it in this project?
+
+The `useState` hook stores and updates changing data inside a React component.
+In this project, I used `useState` to store the selected technologies in the user's stack.
+
+const [stack, setStack] = useState<Itechnology[]>([]);
+
+
+## 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
+
+`useEffect` handles side effects in React components, such as fetching data. It is needed to load JSON data because data fetching is an asynchronous side effect that should run after the initial render.
+
+## 5. Why does every item in a `.map()` list need a unique `key` prop?
+
+A unique `key` helps React identify each item in a list. It allows React to update, add, or remove items efficiently without unnecessarily re-rendering the entire list.
+
+
+## 6. What is conditional rendering? Show one place you used it.
+
+Conditional rendering means showing different UI elements depending on a condition.
+In this project, I showed an empty message when no technology was selected:
+
+{stack.length === 0 ? (
+  <p>No technologies selected yet.</p>
+) : (
+  <YourSelectedTechnologies />
+)}
+   
+
+If the stack is empty, the message is shown. Otherwise, the selected technologies are displayed.
+
+## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+A parent sends data to a child through props.
+The child can send information back to the parent by calling a function received through props.
+
