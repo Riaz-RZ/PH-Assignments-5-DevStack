@@ -62,7 +62,7 @@ Conditional rendering means showing different UI elements depending on a conditi
 In this project, I showed an empty message when no technology was selected:
 
 {stack.length === 0 ? (
-  <p>No technologies selected yet.</p>
+  <p>Your Stack is Empty.</p>
 ) : (
   <YourSelectedTechnologies />
 )}
